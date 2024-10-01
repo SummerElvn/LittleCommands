@@ -1,9 +1,11 @@
 
-Removing Adds Temporarily until refresh :
+Removing Ads Temporarily in a webpage until refresh :
 -------------------------
 Paste it in the console
 1. allow pasting (type manually in console as chrome will keep throwing warning, then you can paste below command)
-2. document.querySelectorAll('[data-freestar-ad]').forEach(el => el.remove());
   // To remove all elements with the class 'ad' or similar classes
-3. document.querySelectorAll('.ad, .ads, .banner, .sponsor, .advertisement').forEach(el => el.remove());
+2. document.querySelectorAll('.ad, .ads, .banner, .sponsor, .advertisement').forEach(el => el.remove());
+3. if above is not working, use inspect element to find the ad element and use that in below command.  "data-freestar-ad" is add element.
+  document.querySelectorAll('[data-freestar-ad]').forEach(el => el.remove());
+
 
